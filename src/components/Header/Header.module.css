@@ -1,0 +1,15 @@
+.container{
+    @apply flex items-center flex-col;
+}
+
+.title{
+    @apply text-secondary-2;
+}
+
+.imgContainer{
+    @apply flex;
+}
+
+.img{
+    
+}

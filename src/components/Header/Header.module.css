@@ -1,9 +1,9 @@
 .container{
-    @apply flex items-center flex-col;
+    @apply flex items-center flex-col pt-5 md:flex-row md:justify-center;
 }
 
 .title{
-    @apply text-secondary-2;
+    @apply text-secondary-2 mb-5;
 }
 
 .imgContainer{
@@ -11,5 +11,5 @@
 }
 
 .img{
-    
+    @apply ml-2 mr-2;
 }

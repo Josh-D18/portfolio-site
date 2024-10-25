@@ -5,7 +5,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Front End Portfolio Site",
+  title: "Josh's Portfolio Site",
   description: "Created By Josh Date",
 };
 

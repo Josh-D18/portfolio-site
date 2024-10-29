@@ -15,26 +15,26 @@ const config: Config = {
         secondary: "#4EE1A0",
         tertiary: "#242424",
         "primary-2": "#d9d9d9",
-        "secondary-2": "#FFFFFF"
+        "secondary-2": "#FFFFFF",
       },
       fontFamily: {
-        customFont: ['"Custom Font"', "sans-serif"],
+        spaceGrotesk: ["Space Grotesk"],
         // Add more custom font families as needed
       },
     },
     screens: {
-      'md': '768px',
+      md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1440px',
+      "2xl": "1440px",
       // => @media (min-width: 1536px) { ... }
-    }
+    },
   },
   plugins: [],
 };

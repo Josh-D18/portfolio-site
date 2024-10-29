@@ -1,0 +1,13 @@
+.container {
+  @apply flex flex-col items-center justify-center;
+}
+
+.img {
+  @apply pb-10;
+}
+.title {
+}
+
+.description {
+  @apply text-center;
+}

@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-secondary-2 mb-5 text-2xl font-bold not-italic leading-8 tracking-tighter md:mb-0 md:text-[32px] md:tracking-[-0.444px];
+  @apply text-white mb-5 text-2xl font-bold not-italic leading-8 tracking-tighter md:mb-0 md:text-[32px] md:tracking-[-0.444px];
 
   @media (max-width: 768px) {
     -webkit-text-stroke-width: 0.1px;
@@ -16,5 +16,5 @@
 }
 
 .img {
-  @apply ml-6 mr-6 md:ml-8 md:mr-8;
+  @apply mr-6  md:mr-8;
 }

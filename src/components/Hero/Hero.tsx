@@ -13,14 +13,17 @@ const Hero = () => {
         height={242}
         className={styles.img}
       />
-      <h2 className={styles.title}>
-        Nice to meet you! I&apos;m <LinkTo path="" content="Josh Date." />
-      </h2>
-      <p className={styles.description}>
-        Based in the UK, I&apos;m a front-end developer passionate about
-        building accessible web apps that users love.
-      </p>
-      <LinkTo path="#path" content="Contact Me" />
+      <div className={styles.infoContainer}>
+        <h2 className={styles.title}>
+          Nice to meet you! I&apos;m{" "}
+          <LinkTo path="" content="Josh Date." parentStyle={styles.title} />
+        </h2>
+        <p className={styles.description}>
+          Based in Canada Ontario, I&apos;m a front-end developer passionate
+          about building accessible web apps that users love.
+        </p>
+        <LinkTo path="#path" content="Contact Me" />
+      </div>
     </section>
   );
 };

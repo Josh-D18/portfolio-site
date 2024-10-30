@@ -4,3 +4,17 @@
   text-decoration-color: #4ee1a0;
   text-decoration-thickness: 2px;
 }
+
+.linkToEffect {
+  @apply hover:text-secondary;
+}
+
+.spacingUnderline {
+  text-decoration-thickness: 4px;
+}
+
+@media (min-width: 768px) {
+  .spacingUnderline {
+    text-decoration-thickness: 6px;
+  }
+}

@@ -1,0 +1,11 @@
+.title {
+  @apply text-[32px] font-bold leading-[40px] tracking-[-1px] not-italic text-center text-white md:pb-2.5 md:text-[48px] md:leading-[56px] md:tracking-[-1.5px];
+}
+
+.container {
+  @apply mb-6 md:flex md:flex-col md:items-start md:w-[345px];
+}
+
+.description {
+  @apply not-italic font-medium leading-[26px] text-[16px] text-center text-grey md:text-[18px] md:leading-[28px];
+}

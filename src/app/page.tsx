@@ -1,17 +1,13 @@
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
+import LangExperience from "@/components/LangExperience/LangExperience";
 
 export default function Home() {
   return (
     <section className="bg-primary h-screen">
       <Header />
       <Hero />
-
-      <section>
-        HTML 4 Years Experience CSS 4 Years Experience JavaScript 4 Years
-        Experience Accessibility 4 Years Experience React 3 Years Experience
-        Sass 3 Years Experience
-      </section>
+      <LangExperience />
 
       <section>
         Projects Contact me Design portfolio HTML CSS View project View code

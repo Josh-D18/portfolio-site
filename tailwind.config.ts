@@ -14,8 +14,8 @@ const config: Config = {
         primary: "#151515",
         secondary: "#4EE1A0",
         tertiary: "#242424",
-        "primary-2": "#d9d9d9",
-        "secondary-2": "#FFFFFF",
+        grey: "#d9d9d9",
+        white: "#FFFFFF",
       },
       fontFamily: {
         spaceGrotesk: ["Space Grotesk"],

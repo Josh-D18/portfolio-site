@@ -16,28 +16,28 @@ const Header: React.FC = () => {
           width={19}
           height={19}
           className={styles.img}
-        ></Image>
+        />
         <Image
           src={iconMentor}
           alt="frontend mentor icon"
           width={19}
           height={19}
           className={styles.img}
-        ></Image>
+        />
         <Image
           src={iconLinkedIn}
           alt="linkedin icon"
           width={19}
           height={19}
           className={styles.img}
-        ></Image>
+        />
         <Image
           src={iconTwitter}
           alt="twitter icon"
           width={19}
           height={19}
           className={styles.img}
-        ></Image>
+        />
       </div>
     </header>
   );

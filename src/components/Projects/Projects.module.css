@@ -1,0 +1,15 @@
+.mainContainer {
+  @apply px-4 md:px-0 max-w-[708px] md:ml-auto md:mr-auto 2xl:max-w-[1100px];
+}
+
+.container {
+  @apply flex flex-col items-center md:grid md:grid-cols-2 md:max-w-[706px] md:justify-items-center 2xl:max-w-[1100px] 2xl:justify-items-start;
+}
+
+.infoContainer {
+  @apply flex items-center justify-between mb-10 w-[343px] m-auto md:h-[60px] 2xl:h-[80px] md:pr-[13px]   md:w-[706px] 2xl:w-[1100px];
+}
+
+.title {
+  @apply text-[40px] not-italic font-bold leading-[40px] tracking-[-1.136px] text-white md:text-[72px] 2xl:text-[88px] 2xl:leading-[88px] 2xl:tracking-[-2.5px];
+}

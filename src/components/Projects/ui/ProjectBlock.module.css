@@ -1,0 +1,27 @@
+.container {
+  @apply mb-10 w-[342px] h-[395px] md:odd:pr-[20px];
+}
+
+.img {
+  @apply mb-[20px] hover:opacity-30 aspect-auto w-[345px] h-[253px];
+}
+
+.title {
+  @apply text-2xl not-italic font-bold leading-8 text-white pb-[7px];
+}
+
+.typesContainer {
+  @apply flex pb-[20px];
+}
+
+.type {
+  @apply pr-[18px] text-grey text-lg font-medium leading-[28px];
+}
+
+.linkToButtonsContainer {
+  @apply flex;
+}
+
+.linkToButtonsSpacing {
+  @apply pr-[30px];
+}

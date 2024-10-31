@@ -1,0 +1,56 @@
+[
+  {
+    "projectTitle": "Design Portfolio",
+    "src": "/assets/images/projectImages/Bitmap.png",
+    "alt": "Portfolio Project Image",
+    "linkToButtons": [
+      ["/", "View Project"],
+      ["/", "View Code"]
+    ],
+    "projectTypes": ["HTML", "CSS"]
+  },
+
+  {
+    "projectTitle": "Design Portfolio",
+    "src": "/assets/images/projectImages/Bitmap.png",
+    "alt": "Portfolio Project Image",
+    "linkToButtons": [
+      ["/", "View Project"],
+      ["/", "View Code"]
+    ],
+    "projectTypes": ["HTML", "CSS"]
+  },
+
+  {
+    "projectTitle": "Design Portfolio",
+    "src": "/assets/images/projectImages/Bitmap.png",
+    "alt": "Portfolio Project Image",
+    "linkToButtons": [
+      ["/", "View Project"],
+      ["/", "View Code"]
+    ],
+    "projectTypes": ["HTML", "CSS"]
+  },
+
+  {
+    "projectTitle": "Design Portfolio",
+    "src": "/assets/images/projectImages/Bitmap.png",
+    "alt": "Portfolio Project Image",
+    "linkToButtons": [
+      ["/", "View Project"],
+      ["/", "View Code"]
+    ],
+    "projectTypes": ["HTML", "CSS"]
+  },
+
+  {
+    "projectTitle": "Design Portfolio",
+    "src": "/assets/images/projectImages/Bitmap.png",
+    "alt": "Portfolio Project Image",
+    "linkToButtons": [
+      ["/", "View Project"],
+      ["/", "View Code"]
+    ],
+    "projectTypes": ["HTML", "CSS"]
+  }
+]

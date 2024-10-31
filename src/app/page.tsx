@@ -1,22 +1,15 @@
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import LangExperience from "@/components/LangExperience/LangExperience";
+import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
   return (
-    <section className="bg-primary h-screen">
+    <section>
       <Header />
       <Hero />
       <LangExperience />
-
-      <section>
-        Projects Contact me Design portfolio HTML CSS View project View code
-        E-learning landing page HTML CSS View project View code Todo web app
-        HTML CSS JavaScript View project View code Entertainment web app HTML
-        CSS JavaScript View project View code Memory Game HTML CSS JavaScript
-        View project View code Art gallery showcase HTML CSS JavaScript View
-        project View code
-      </section>
+      <Projects />
 
       <section>
         Contact I would love to hear about your project and how I could help.

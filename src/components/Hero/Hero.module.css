@@ -7,7 +7,7 @@
 }
 
 .img {
-  @apply pb-10  md:w-full md:h-full md:max-h-[486px] md:flex-1 aspect-auto md:max-w-[322px] 2xl:max-w-[445px];
+  @apply pb-10 object-cover  md:w-full md:h-full md:max-h-[486px] md:flex-1 aspect-auto md:max-w-[322px] 2xl:max-w-[445px];
 }
 
 .title {

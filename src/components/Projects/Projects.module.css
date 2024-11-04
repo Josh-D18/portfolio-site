@@ -7,7 +7,7 @@
 }
 
 .infoContainer {
-  @apply flex items-center justify-between mb-10 w-[343px] m-auto md:h-[60px] 2xl:h-[80px] md:pr-[13px]   md:w-[706px] 2xl:w-[1100px];
+  @apply flex items-center justify-between mb-10 w-full h-full max-w-[343px] m-auto md:max-h-[60px] 2xl:max-h-[80px] md:pr-[13px] md:max-w-[706px] 2xl:max-w-[1100px];
 }
 
 .title {

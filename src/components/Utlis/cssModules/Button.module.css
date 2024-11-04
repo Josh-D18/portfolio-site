@@ -1,0 +1,6 @@
+.btn {
+  @apply self-end pb-2.5 font-bold underline underline-offset-[10px] leading-[26px] text-base tracking-[2.286px] hover:text-secondary;
+
+  text-decoration-color: #4ee1a0;
+  text-decoration-thickness: 2px;
+}

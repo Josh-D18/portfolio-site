@@ -1,9 +1,9 @@
 .container {
-  @apply mb-10 w-[342px] h-[395px] md:odd:pr-[20px];
+  @apply mb-10 w-full h-full max-w-[342px] max-h-[395px] md:odd:pr-[20px] 2xl:max-w-[540px] 2xl:max-h-[487px] 2xl:mb-[69px];
 }
 
 .img {
-  @apply mb-[20px] hover:opacity-30 aspect-auto w-[345px] h-[253px];
+  @apply mb-[20px] w-full h-full odd:aspect-square max-w-[345px] max-h-[253px] 2xl:max-w-[540px] 2xl:max-h-[400px] object-cover;
 }
 
 .title {
@@ -18,10 +18,23 @@
   @apply pr-[18px] text-grey text-lg font-medium leading-[28px];
 }
 
+.imgContainer:hover .img {
+  @apply 2xl:opacity-20;
+}
+
+.imgContainer:hover,
+.linkToButtonsDesktopContainer {
+  @apply 2xl:block relative;
+}
+
 .linkToButtonsContainer {
-  @apply flex;
+  @apply flex 2xl:hidden;
+}
+
+.linkToButtonsDesktopContainer {
+  @apply hidden 2xl:block cursor-pointer 2xl:top-0 2xl:left-0 2xl:right-0 2xl:bottom-0 absolute z-10 items-center justify-center;
 }
 
 .linkToButtonsSpacing {
-  @apply pr-[30px];
+  @apply pr-[30px] 2xl:text-center 2xl:odd:pb-12;
 }

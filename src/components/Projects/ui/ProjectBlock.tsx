@@ -14,13 +14,23 @@ const ProjectBlock = (blockInfo: IBlock) => {
 
   return (
     <div className={styles.container}>
-      <Image
-        src={src}
-        alt={alt}
-        width={345}
-        height={253}
-        className={styles.img}
-      />
+      <div className={styles.imgContainer}>
+        <Image
+          src={src}
+          alt={alt}
+          width={345}
+          height={253}
+          className={styles.img}
+        />
+        <div className={styles.linkToButtonsDesktopContainer}>
+          {linkToButtons.map((info: string[], id: number) => (
+            // eslint-disable-next-line react/jsx-key
+            <div className={styles.linkToButtonsSpacing}>
+              <LinkTo path={info[0]} content={info[1]} key={id} />
+            </div>
+          ))}
+        </div>
+      </div>
       <div>
         <h3 className={styles.title}>{projectTitle}</h3>
         <div className={styles.typesContainer}>
@@ -33,8 +43,8 @@ const ProjectBlock = (blockInfo: IBlock) => {
       </div>
       <div className={styles.linkToButtonsContainer}>
         {linkToButtons.map((info: string[], id: number) => (
-          <div className={styles.linkToButtonsSpacing}>
-            <LinkTo path={info[0]} content={info[1]} key={id} />
+          <div className={styles.linkToButtonsSpacing} key={id}>
+            <LinkTo path={info[0]} content={info[1]} />
           </div>
         ))}
       </div>

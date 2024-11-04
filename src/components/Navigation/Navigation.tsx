@@ -1,11 +1,11 @@
 import Image from "next/image";
-import iconMentor from "../../../public/assets/images/frontendmentoricon.png";
-import iconGithub from "../../../public/assets/images/githubIcon.png";
-import iconLinkedIn from "../../../public/assets/images/LinkedInIcon.png";
-import iconTwitter from "../../../public/assets/images/twitterIcon.png";
-import styles from "@/components/Header/Header.module.css";
+import iconMentor from "../../../public/assets/images/frontendmentorIcon.svg";
+import iconGithub from "../../../public/assets/images/githubIcon.svg";
+import iconLinkedIn from "../../../public/assets/images/linkedInIcon.svg";
+import iconTwitter from "../../../public/assets/images/twitterIcon.svg";
+import styles from "@/components/Navigation/Navigation.module.css";
 
-const Header: React.FC = () => {
+const Navigation: React.FC = () => {
   return (
     <header className={styles.container}>
       <h1 className={styles.title}>joshdate</h1>
@@ -43,4 +43,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Navigation;

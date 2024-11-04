@@ -1,5 +1,9 @@
-@import url("/public/assets/fonts/static/SpaceGrotesk-Regular.ttf");
-
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/static/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,22 +13,6 @@
   --foreground: #171717;
 }
 
-/* const
-  poppins
-  =
-  localFont({
-  src: [
-    {
-      path: '../../public/fonts/Poppins-Regular.ttf',
-      weight: '400'
-    },
-    {
-      path: '../../public/fonts/Poppins-Bold.ttf',
-      weight: '700'
-    }
-  ],
-  variable: '--font-poppins'
-}) */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -35,5 +23,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "spaceGrotesk";
+  font-family: "Space Grotesk", sans-serif;
 }

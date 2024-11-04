@@ -1,0 +1,27 @@
+.container {
+  @apply bg-tertiary flex flex-col items-center px-[16px];
+}
+
+.form {
+  @apply flex flex-col items-center pb-[87px] pt-[60px] max-w-[343px] md:max-w-[445px] 2xl:flex-row 2xl:max-w-[1110px] 2xl:items-start border-b-white;
+}
+
+.title {
+  @apply mb-[20px] text-[40px] not-italic font-bold leading-[40px] tracking-[-1.136px] text-center md:text-[72px] md:leading-[72px] md:tracking-[-2.045px] 2xl:text-left;
+}
+
+.description {
+  @apply text-[16px] not-italic font-medium leading-[26px] text-center text-grey mb-[50px] max-w-[343px] w-full max-h-[78px] h-full md:max-w-[445px] md:max-h-[84px] md:text-[18px] md:leading-[28px] 2xl:text-left;
+}
+
+.infoContainer {
+  @apply text-start;
+}
+
+.inputContainer {
+  @apply 2xl:max-w-[445px] text-right 2xl:ml-[220px];
+}
+
+.line {
+  @apply max-w-[343px] w-full mx-[16px] border-b-[1px] h-2 md:max-w-[706px] 2xl:max-w-[1110px];
+}

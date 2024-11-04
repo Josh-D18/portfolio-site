@@ -1,0 +1,5 @@
+.input {
+  @apply max-w-[343px] h-[43px] w-full border-0 bg-transparent uppercase border-b-[1px] border-b-white mb-[32px] pl-[24px] pb-[17px] md:max-w-[445px] md:w-full;
+}
+
+/* pl-[24px] pb-[17px] */

@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-
 
 export const metadata: Metadata = {
   title: "Josh's Portfolio Site",
@@ -16,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={``}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

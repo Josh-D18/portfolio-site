@@ -1,0 +1,3 @@
+.textbox {
+  @apply max-w-[343px] h-[107px] w-full border-0 bg-transparent uppercase border-b-[1px] border-b-white mb-[32px] resize-none pl-[24px] pb-[81px] md:max-w-[445px];
+}

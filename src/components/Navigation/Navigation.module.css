@@ -1,0 +1,21 @@
+.container {
+  @apply flex items-center flex-col pt-5 pb-12 md:flex-row md:justify-between md:items-center md:pt-6 md:max-w-[706px] md:mx-auto md:px-0 md:w-full md:pb-6 2xl:px-0 2xl:max-w-[1110px];
+}
+
+.title {
+  @apply text-white mb-5 text-2xl font-bold not-italic leading-8 tracking-tighter md:mb-0 md:text-[32px] md:tracking-[-0.444px];
+
+  @media (max-width: 768px) {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #000;
+  }
+}
+
+.imgContainer {
+  @apply flex;
+}
+
+.img {
+  @apply hover:fill-primaryFill  [&:nth-child(2)]:mr-6 odd:mr-6  md:odd:mr-8 md:[&:nth-child(2)]:mr-8 cursor-pointer fill-current;
+}
+

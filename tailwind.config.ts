@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fill: {
+        primaryFill: "#4EE1A0",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -18,7 +21,7 @@ const config: Config = {
         white: "#FFFFFF",
       },
       fontFamily: {
-        spaceGrotesk: ["Space Grotesk"],
+        "Space Grotesk": ["Space Grotesk"],
         // Add more custom font families as needed
       },
     },

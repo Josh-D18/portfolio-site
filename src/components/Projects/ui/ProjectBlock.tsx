@@ -1,6 +1,8 @@
+"use client";
 import LinkTo from "@/components/Utlis/LinkTo";
 import Image from "next/image";
 import styles from "./ProjectBlock.module.css";
+import { useState } from "react";
 interface IBlock {
   projectTitle: string;
   src: string;
@@ -9,8 +11,17 @@ interface IBlock {
   projectTypes: string[];
 }
 
-const ProjectBlock = (blockInfo: IBlock) => {
+const ProjectBlock: React.FC<IBlock> = (blockInfo: IBlock) => {
   const { projectTitle, src, alt, linkToButtons, projectTypes } = blockInfo;
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = (e: React.MouseEvent) => {
+    if (e.type === "mouseenter") {
+      setIsHovered(true);
+    } else {
+      setIsHovered(false);
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -22,11 +33,16 @@ const ProjectBlock = (blockInfo: IBlock) => {
           height={253}
           className={styles.img}
         />
-        <div className={styles.linkToButtonsDesktopContainer}>
+        <div
+          className={`${!isHovered && "2xl:hidden"} ${
+            styles.linkToButtonsDesktopContainer
+          }`}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
+        >
           {linkToButtons.map((info: string[], id: number) => (
-            // eslint-disable-next-line react/jsx-key
-            <div className={styles.linkToButtonsSpacing}>
-              <LinkTo path={info[0]} content={info[1]} key={id} />
+            <div className={styles.linkToButtonsSpacing} key={id}>
+              <LinkTo path={info[0]} content={info[1]} />
             </div>
           ))}
         </div>
@@ -52,4 +68,4 @@ const ProjectBlock = (blockInfo: IBlock) => {
   );
 };
 
-export default ProjectBlock;
+export { ProjectBlock };

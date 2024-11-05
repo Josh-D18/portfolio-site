@@ -1,9 +1,9 @@
 import LinkTo from "../Utlis/LinkTo";
 import styles from "./Projects.module.css";
-import ProjectBlock from "./ui/ProjectBlock";
+import { ProjectBlock } from "./ui/ProjectBlock";
 import data from "./data/projects.json";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
     <section className={styles.mainContainer}>
       <div className={styles.infoContainer}>

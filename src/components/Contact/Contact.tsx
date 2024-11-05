@@ -6,7 +6,7 @@ import Input from "./ui/Input";
 import TextBox from "./ui/TextBox";
 import Button from "../Utlis/Button";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");

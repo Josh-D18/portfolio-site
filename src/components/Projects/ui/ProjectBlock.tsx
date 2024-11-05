@@ -25,7 +25,11 @@ const ProjectBlock: React.FC<IBlock> = (blockInfo: IBlock) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.imgContainer}>
+      <div
+        className={styles.imgContainer}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
+      >
         <Image
           src={src}
           alt={alt}
@@ -34,11 +38,11 @@ const ProjectBlock: React.FC<IBlock> = (blockInfo: IBlock) => {
           className={styles.img}
         />
         <div
-          className={`${!isHovered && "2xl:hidden"} ${
-            styles.linkToButtonsDesktopContainer
-          }`}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHover}
+          className={`${
+            isHovered
+              ? "2xl:h-full 2xl:overflow-visible"
+              : "2xl:h-0 2xl:overflow-hidden"
+          } ${styles.linkToButtonsDesktopContainer}`}
         >
           {linkToButtons.map((info: string[], id: number) => (
             <div className={styles.linkToButtonsSpacing} key={id}>

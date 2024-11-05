@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-  const [error, setError] = useState<string>("");
+  const [notification, setNotification] = useState<string>("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -28,11 +28,41 @@ const Contact: React.FC = () => {
     }
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      email,
+      message,
+    };
+
+    try {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      setName("");
+      setEmail("");
+      setMessage("");
+      setNotification("Success!");
+      setTimeout(() => {
+        setNotification("");
+      }, 1000);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (__) {
+      setNotification("Error! Please try again later");
+      setTimeout(() => {
+        setNotification("");
+      }, 2000);
+    }
+  };
 
   return (
     <section className={styles.container}>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit} data-netlify="true">
         <div className={styles.infoContainer}>
           <h3 className={styles.title}>Contact</h3>
           <p className={styles.description}>
@@ -65,6 +95,7 @@ const Contact: React.FC = () => {
             handleChange={handleChange}
           />
           <Button content="Send Message" />
+          <p>{notification}</p>
         </div>
       </form>
       <span className={styles.line}></span>

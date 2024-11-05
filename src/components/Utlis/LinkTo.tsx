@@ -7,7 +7,7 @@ interface ILinkTo {
   parentStyle?: string;
 }
 
-const LinkTo = (ILinkTo: ILinkTo) => {
+const LinkTo: React.FC<ILinkTo> = (ILinkTo: ILinkTo) => {
   const { path, content, parentStyle } = ILinkTo;
   return (
     <>

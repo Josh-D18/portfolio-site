@@ -3,7 +3,7 @@
 }
 
 .img {
-  @apply mb-[20px] w-full h-full odd:aspect-square max-w-[345px] max-h-[253px] 2xl:max-w-[540px] 2xl:max-h-[400px] object-cover;
+  @apply mb-[20px] w-full h-full odd:aspect-square max-w-[345px] max-h-[253px] 2xl:max-w-[540px] 2xl:max-h-[400px] object-cover 2xl:row-start-1 2xl:row-end-4 2xl:col-start-1 2xl:col-end-2;
 }
 
 .title {
@@ -19,16 +19,15 @@
 }
 
 .imgContainer:hover .img {
-  @apply 2xl:opacity-20 2xl:row-start-1 2xl:row-end-4 2xl:col-start-1 2xl:col-end-2;
+  @apply 2xl:opacity-20;
 }
 
 .linkToButtonsDesktopContainer {
-  @apply hidden cursor-pointer z-10;
+  @apply cursor-pointer z-10 2xl:col-start-1 2xl:col-end-1 2xl:row-start-2 2xl:row-end-2 hidden 2xl:grid;
 }
 
 .imgContainer:hover,
 .linkToButtonsDesktopContainer {
-  @apply 2xl:grid relative 2xl:col-start-1 2xl:col-end-1 2xl:row-start-2 2xl:row-end-2;
 }
 
 .imgContainer {
@@ -38,16 +37,6 @@
 .linkToButtonsContainer {
   @apply flex 2xl:hidden;
 }
-
-/*     grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1; */
-/* 2xl:grid-cols-1 2xl:grid-rows-1; 
-
-grid-area: 1 / 1 / 4 / 2;
-
-*/
 
 .linkToButtonsSpacing {
   @apply pr-[30px] 2xl:text-center 2xl:odd:pb-12;

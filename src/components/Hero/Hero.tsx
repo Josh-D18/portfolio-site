@@ -3,7 +3,7 @@ import LinkTo from "../Utlis/LinkTo";
 import styles from "@/components/Hero/Hero.module.css";
 import image from "../../../public/assets/images/portfolioImages/file.png";
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <section className={styles.container}>
       <Image

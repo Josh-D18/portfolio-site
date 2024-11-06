@@ -25,10 +25,10 @@ const Hero = () => {
         <div className={styles.linkContainer}>
           <LinkTo path="#form" content="Contact Me" />
           <span className={styles.spacing}></span>
-          <LinkTo
+          {/* <LinkTo
             path={"../../../public/assets/images/JoshDResume.pdf"}
             content="Download Resume"
-          />
+          /> */}
         </div>
       </div>
     </section>

@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className={styles.container}>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit} id="form">
         <div className={styles.infoContainer}>
           <h3 className={styles.title}>Contact</h3>
           <p className={styles.description}>

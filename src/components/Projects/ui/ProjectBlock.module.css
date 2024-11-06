@@ -11,7 +11,7 @@
 }
 
 .typesContainer {
-  @apply flex pb-[20px];
+  @apply flex pb-[20px] flex-wrap;
 }
 
 .type {

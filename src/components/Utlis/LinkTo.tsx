@@ -10,6 +10,9 @@ interface ILinkTo {
 
 const LinkTo: React.FC<ILinkTo> = (ILinkTo: ILinkTo) => {
   const { path, content, parentStyle } = ILinkTo;
+
+  const isDownloadableFile = typeof path === "string" && path.endsWith(".pdf");
+
   return (
     <>
       {path === "" ? (
@@ -18,10 +21,18 @@ const LinkTo: React.FC<ILinkTo> = (ILinkTo: ILinkTo) => {
         >
           {content}
         </span>
+      ) : isDownloadableFile ? (
+        <a
+          href={path}
+          download
+          className={`${styles.linkTo} ${styles.linkToEffect}`}
+        >
+          {content}
+        </a>
       ) : (
         <Link
-          className={`${styles.linkTo} ${styles.linkToEffect}`}
           href={{ pathname: `${path}` }}
+          className={`${styles.linkTo} ${styles.linkToEffect}`}
         >
           {content}
         </Link>

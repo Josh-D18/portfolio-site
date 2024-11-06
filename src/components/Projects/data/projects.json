@@ -1,56 +1,23 @@
 [
   {
-    "projectTitle": "Design Portfolio",
-    "src": "/assets/images/projectImages/Bitmap.png",
+    "projectTitle": "DevFinder",
+    "src": "/assets/images/projectImages/devfinderprojectimage.PNG",
     "alt": "Portfolio Project Image",
     "linkToButtons": [
-      ["/", "View Project"],
-      ["/", "View Code"]
+      ["https://kind-mestorf-d5cc86.netlify.app/", "View Project"],
+      ["https://github.com/Josh-D18/devfinder", "View Code"]
     ],
-    "projectTypes": ["HTML", "CSS"]
+    "projectTypes": ["Typescript", "CSS", "React", "TailwindCss"]
   },
 
   {
-    "projectTitle": "Design Portfolio",
-    "src": "/assets/images/projectImages/Bitmap.png",
+    "projectTitle": "Design Portfolio Version 1",
+    "src": "/assets/images/projectImages/portfoliositeprojectimage.PNG",
     "alt": "Portfolio Project Image",
     "linkToButtons": [
-      ["/", "View Project"],
-      ["/", "View Code"]
+      ["https://kind-mestorf-d5cc86.netlify.app/", "View Project"],
+      ["https://github.com/Josh-D18/portfoliowebsite", "View Code"]
     ],
-    "projectTypes": ["HTML", "CSS"]
-  },
-
-  {
-    "projectTitle": "Design Portfolio",
-    "src": "/assets/images/projectImages/Bitmap.png",
-    "alt": "Portfolio Project Image",
-    "linkToButtons": [
-      ["/", "View Project"],
-      ["/", "View Code"]
-    ],
-    "projectTypes": ["HTML", "CSS"]
-  },
-
-  {
-    "projectTitle": "Design Portfolio",
-    "src": "/assets/images/projectImages/Bitmap.png",
-    "alt": "Portfolio Project Image",
-    "linkToButtons": [
-      ["/", "View Project"],
-      ["/", "View Code"]
-    ],
-    "projectTypes": ["HTML", "CSS"]
-  },
-
-  {
-    "projectTitle": "Design Portfolio",
-    "src": "/assets/images/projectImages/Bitmap.png",
-    "alt": "Portfolio Project Image",
-    "linkToButtons": [
-      ["/", "View Project"],
-      ["/", "View Code"]
-    ],
-    "projectTypes": ["HTML", "CSS"]
+    "projectTypes": ["HTML", "CSS", "JQuery"]
   }
 ]

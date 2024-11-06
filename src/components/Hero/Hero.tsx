@@ -2,7 +2,7 @@ import Image from "next/image";
 import LinkTo from "../Utlis/LinkTo";
 import styles from "@/components/Hero/Hero.module.css";
 import image from "../../../public/assets/images/portfolioImages/file.png";
-import diploma from "../../../public/assets/images/OntarioCollegeDiploma.pdf";
+//import diploma from "../../../public/assets/images/OntarioCollegeDiploma.pdf";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
           <LinkTo path="#path" content="Contact Me" />
           <span className={styles.spacing}></span>
           <LinkTo
-            path={"../../../public/assets/images/OntarioCollegeDiploma.png"}
+            path={"../../../public/assets/images/OntarioCollegeDiploma.pdf"}
             content="Download Resume"
           />
         </div>

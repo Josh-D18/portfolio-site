@@ -4,7 +4,7 @@
     "src": "/assets/images/projectImages/devfinderprojectimage.PNG",
     "alt": "Portfolio Project Image",
     "linkToButtons": [
-      ["https://kind-mestorf-d5cc86.netlify.app/", "View Project"],
+      ["https://heroic-peony-b77b56.netlify.app/", "View Project"],
       ["https://github.com/Josh-D18/devfinder", "View Code"]
     ],
     "projectTypes": ["Typescript", "CSS", "React", "TailwindCss"]

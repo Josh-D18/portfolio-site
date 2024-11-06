@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "download-pdf": "^0.1.6",
     "next": "15.0.1",
     "portfolio-site": "file:",
     "react": "19.0.0-rc-69d4b800-20241021",

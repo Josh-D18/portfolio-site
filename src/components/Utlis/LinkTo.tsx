@@ -1,8 +1,9 @@
 import Link from "next/link";
 import styles from "./cssModules/LinkTo.module.css";
+import { StaticImageData } from "next/image";
 
 interface ILinkTo {
-  path: string;
+  path: string | StaticImageData;
   content: string;
   parentStyle?: string;
 }

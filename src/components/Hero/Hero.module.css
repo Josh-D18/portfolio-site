@@ -7,7 +7,7 @@
 }
 
 .infoContainer {
-  @apply flex flex-col items-center justify-center px-4 max-w-[343px]  md:max-w-[387px] md:relative md:items-start md:pl-8 md:pr-0 md:flex-1 2xl:pl-0;
+  @apply flex flex-col items-center justify-center px-4 max-w-[375px]  md:max-w-[387px] md:relative md:items-start md:pl-8 md:pr-0 md:flex-1 2xl:pl-0;
 }
 
 .img {
